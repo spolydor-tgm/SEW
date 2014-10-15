@@ -16,8 +16,8 @@ public class Test {
 
 		System.out.println('\n' + "Typanpassung");
 		long e = c.getPs(); // int in einen long speichern. Automatischer cast
-		System.out.println("int in long speichern (kleinerer Datentyp in groeﬂeren: " + e);
-		byte f = (byte) e; // long e wird von der Groeﬂe auf den Datentyp byte verringert (expliziter cast).
+		System.out.println("int in long speichern (kleinerer Datentyp in groesseren: " + e);
+		byte f = (byte) e; // long e wird von der Groesse auf den Datentyp byte verringert (expliziter cast).
 		// Verliert dadurch den Wert von 800 und wird auf 32 verringert. Mehr kann byte nicht speichern
 		System.out.println("long zu byte cast (long wird verringert von 800 auf 32): " + f);
 		c.setPs(800);
@@ -26,19 +26,19 @@ public class Test {
 		System.out.println('\n' + "Universelle Polymorphie");
 		System.out.println("Laufzeitpolymorphie");
 		/*
-		Die Methode soutModell() ist sozusagen ?vielgestaltig?, polymorph.
+		Die Methode soutModell() ist sozusagen vielgestaltig, polymorph.
 		Diese Art der an die Vererbung (oder auch an die Implementierung einer Schnittstelle!) gebundene Polymorphie
-		heiﬂt auch Einschlusspolymorphie oder Inklusionspolymorphie.
+		heisst auch Einschlusspolymorphie oder Inklusionspolymorphie.
 		 */
 		b.soutModell(); // Methode von Audi
 		Audi g = new Spezifikationen(800, true, true); // In Objekt Audi wird ein Objekt Spezifikationen gespeichert
 		g.setModell("R8 Spyder"); // setzen des Modells
 		g.soutModell(); // verwendung der Methode von Spezifikationen
 
-		System.out.println('\n' + "Generizit‰t");
+		System.out.println('\n' + "Generizitaet");
 		/*
-		Die Generizit‰t wird auch parametrisierte Polymorphie genannt.
-		Ein und dieselbe Methode, Klasse, soll f¸r Daten verschiedener Typen verwendbar sein.
+		Die Generizitaet wird auch parametrisierte Polymorphie genannt.
+		Ein und dieselbe Methode, Klasse, soll fuer Daten verschiedener Typen verwendbar sein.
 		Durch den Einsatz von formalen Typparametern wird diese Vielgestaltigkeit erreicht.
 		 */
 		System.out.println("Generische Klassen + Methoden");
@@ -51,7 +51,7 @@ public class Test {
 		/*
 		Audi<String> h = new Audi<>("RS7 Sportback"); // Speichern eines Strings durch uebergabe beim Konstruktor
 		Funktioniert nicht. Warum ???
-		Bitte um Erkl‰rung.
+		Bitte um Erklaerung.
 		 */
 		System.out.printf(h.toString()); // Ausgabe der modellKurzbez
 		h.setModellKurzbez(5); // Aendern der modellKurzbez

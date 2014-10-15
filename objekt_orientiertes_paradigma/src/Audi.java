@@ -40,7 +40,7 @@ public class Audi<E> extends Auto {
 
 	/**
 	 * Generisch: Typparameter E
-	 * @param modellValue speichert das Modell
+	 * @param modellKurzbez speichert das Modell
 	 */
 	public Audi(E modellKurzbez) {
 		this.modellKurzbez = modellKurzbez;
@@ -48,7 +48,7 @@ public class Audi<E> extends Auto {
 
 	/**
 	 *
-	 * @param modellValue setzt das Modell des Audi
+	 * @param modellKurzbez setzt das Modell des Audi
 	 */
 	public void setModellKurzbez(E modellKurzbez) {
 		this.modellKurzbez = modellKurzbez;
