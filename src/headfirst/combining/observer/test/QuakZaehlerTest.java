@@ -3,6 +3,7 @@ package headfirst.combining.observer.test;
 import headfirst.combining.observer.GummiEnte;
 import headfirst.combining.observer.QuakZaehler;
 import headfirst.combining.observer.Quakfaehig;
+import headfirst.combining.observer.Quakologe;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,7 +18,6 @@ public class QuakZaehlerTest {
 	private Quakfaehig ente;
 	private QuakZaehler quakZaehler;
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-
 	@Before
 	public void setUp() throws Exception {
 		ente = new GummiEnte();
@@ -39,17 +39,21 @@ public class QuakZaehlerTest {
 
 	@Test
 	public void testRegistriereBeobachter() throws Exception {
-
+		quakZaehler.registriereBeobachter(new Quakologe());
+		quakZaehler.benachrichtigeBeobachtende();
+		assertEquals("Quakologe: Gummiente hat gerade gequakt.", outContent.toString().trim());
 	}
 
 	@Test
 	public void testBenachrichtigeBeobachtende() throws Exception {
-
+		quakZaehler.registriereBeobachter(new Quakologe());
+		quakZaehler.benachrichtigeBeobachtende();
+		assertEquals("Quakologe: Gummiente hat gerade gequakt.", outContent.toString().trim());
 	}
 
 	@Test
 	public void testToString() throws Exception {
-
+		assertEquals(ente.toString(),quakZaehler.toString());
 	}
 	@After
 	public void cleanUpStreams() {
