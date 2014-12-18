@@ -8,14 +8,16 @@ public class Schar implements Quakfaehig {
 	ArrayList quakende = new ArrayList();
 
 	/**
-	 *
-	 * @param quaker
+	 * Fuegt ein Quakfaehig Objekt in die ArrayList hinzu
+	 * @param quaker der hinzugefuegt werden soll
 	 */
 	public void hinzufuegen(Quakfaehig quaker) {
 		quakende.add(quaker);
 	}
 
-
+	/**
+	 * Laesst alle gespeicherten Quaker quaken
+	 */
 	public void quaken() {
 		Iterator iterator = quakende.iterator();
 		while (iterator.hasNext()) {
@@ -37,7 +39,7 @@ public class Schar implements Quakfaehig {
 	}
 
 	/**
-	 *
+	 * Benachrichtigt beobachtende
 	 */
 	public void benachrichtigeBeobachtende() { }
 
