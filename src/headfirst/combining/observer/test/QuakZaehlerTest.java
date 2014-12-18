@@ -34,7 +34,7 @@ public class QuakZaehlerTest {
 	@Test
 	public void testGetQuaks() throws Exception {
 		quakZaehler.quaken();
-		assertEquals(2,quakZaehler.getQuaks());
+		assertEquals(1, QuakZaehler.getQuaks());
 	}
 
 	@Test
