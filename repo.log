@@ -1,0 +1,236 @@
+commit dc63f8125498ab00d38e9c845c12b9706eeaa1c1
+Author: spolydor-tgm <spolydor@student.tgm.ac.at>
+Date:   Thu Dec 18 20:15:14 2014 +0100
+
+    delete classes
+
+ .../combining/observer/test/ScharTest.java         | 37 ----------------------
+ .../combining/observer/test/SenderRingTest.java    | 27 ----------------
+ 2 files changed, 64 deletions(-)
+
+commit 42ffc7d6272ed76dc03d2207a91417d472add462
+Author: tgm-patrick-koc <cash1v@hotmail.com>
+Date:   Thu Dec 18 20:12:23 2014 +0100
+
+    testcases added
+
+ src/headfirst/combining/observer/test/QuakZaehlerTest.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 20263fe92e586afdfc6b23334078332164de702c
+Author: tgm-patrick-koc <cash1v@hotmail.com>
+Date:   Thu Dec 18 20:08:08 2014 +0100
+
+    testcases added
+
+ .../combining/observer/test/QuakZaehlerTest.java     | 12 ++++++++----
+ .../combining/observer/test/QuakologeTest.java       | 20 +++++++++++++++++---
+ 2 files changed, 25 insertions(+), 7 deletions(-)
+
+commit 124b9a5e8ea3d8f20eb179c92bbad08ae9f725a0
+Author: spolydor-tgm <spolydor@student.tgm.ac.at>
+Date:   Thu Dec 18 20:04:16 2014 +0100
+
+    update test cases
+
+ .../combining/observer/test/StockEnteTest.java      | 21 ++++++++++++++++-----
+ 1 file changed, 16 insertions(+), 5 deletions(-)
+
+commit 76db0ef35d313ccd07048240b8c12644cf2e1dbb
+Author: spolydor-tgm <spolydor@student.tgm.ac.at>
+Date:   Thu Dec 18 19:59:14 2014 +0100
+
+    update test cases
+
+ .../combining/observer/test/GummiEnteTest.java     | 49 ++++++++++++++++++++++
+ .../combining/observer/test/LockPfeifeTest.java    | 27 +++++++++---
+ .../combining/observer/test/MoorEnteTest.java      | 49 ++++++++++++++++++++++
+ .../combining/observer/test/StockEnteTest.java     | 38 +++++++++++++++++
+ 4 files changed, 158 insertions(+), 5 deletions(-)
+
+commit c76b0d4c206591518a7b8a49dc6d36039986c985
+Author: spolydor-tgm <spolydor@student.tgm.ac.at>
+Date:   Thu Dec 18 19:34:06 2014 +0100
+
+    update test cases
+
+ src/headfirst/combining/observer/test/GansAdapterTest.java | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+
+commit e47089ed77b781f4ec517a9067c041f3102ed5c9
+Author: spolydor-tgm <spolydor@student.tgm.ac.at>
+Date:   Thu Dec 18 19:26:00 2014 +0100
+
+    update docu
+
+ src/headfirst/combining/observer/EntenSimulator.java      |  2 +-
+ .../combining/observer/test/GansAdapterTest.java          | 12 ++++++++++--
+ src/headfirst/combining/observer/test/GansTest.java       | 15 ++++++++++++++-
+ .../combining/observer/test/QuakZaehlerTest.java          |  1 +
+ 4 files changed, 26 insertions(+), 4 deletions(-)
+
+commit bcf20f1b888676f14fcfab131655f0fe6b73f7ab
+Author: tgm-patrick-koc <cash1v@hotmail.com>
+Date:   Thu Dec 18 19:05:13 2014 +0100
+
+    testcases added
+
+ .../combining/observer/test/EntenfabrikTest.java   |  1 +
+ .../combining/observer/test/QuakZaehlerTest.java   | 26 +++++++++++++++++++---
+ 2 files changed, 24 insertions(+), 3 deletions(-)
+
+commit b0f9a6ce443451f0792a49e7e7edadfdbccf364b
+Author: spolydor-tgm <spolydor@student.tgm.ac.at>
+Date:   Thu Dec 18 18:44:24 2014 +0100
+
+    generated javadoc
+
+ src/headfirst/combining/observer/EntenSimulator.java          | 4 ++--
+ src/headfirst/combining/observer/QuakBeobachtungsSubjekt.java | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+commit d1ad73ef6c7750e90d0cfaf506c0995f0fdc8336
+Author: spolydor-tgm <spolydor@student.tgm.ac.at>
+Date:   Thu Dec 18 18:37:05 2014 +0100
+
+    update documentation
+
+ .../combining/observer/EntenSimulator.java         | 31 +++++++++++++++++-----
+ src/headfirst/combining/observer/Schar.java        | 10 ++++---
+ 2 files changed, 31 insertions(+), 10 deletions(-)
+
+commit 8d5d87a29eea0ee070a49702431faa274653a194
+Author: spolydor-tgm <spolydor@student.tgm.ac.at>
+Date:   Thu Dec 18 18:29:09 2014 +0100
+
+    update docu
+
+ .../combining/observer/AbstrakteEntenFabrik.java   |  8 ++++-
+ src/headfirst/combining/observer/Beobachter.java   |  5 +++
+ src/headfirst/combining/observer/Entenfabrik.java  | 24 +++++++++++---
+ src/headfirst/combining/observer/Gans.java         |  9 ++++-
+ src/headfirst/combining/observer/GansAdapter.java  | 23 ++++++++++++-
+ src/headfirst/combining/observer/GummiEnte.java    | 22 +++++++++++--
+ src/headfirst/combining/observer/LockPfeife.java   | 24 ++++++++++++--
+ src/headfirst/combining/observer/MoorEnte.java     | 18 ++++++++++
+ .../observer/QuakBeobachtungsSubjekt.java          |  7 ++++
+ src/headfirst/combining/observer/QuakZaehler.java  | 33 +++++++++++++++----
+ src/headfirst/combining/observer/Quakfaehig.java   |  4 +++
+ src/headfirst/combining/observer/Quakologe.java    | 11 +++++--
+ src/headfirst/combining/observer/Schar.java        | 26 ++++++++++++---
+ src/headfirst/combining/observer/SenderRing.java   | 24 +++++++++++---
+ src/headfirst/combining/observer/StockEnte.java    | 28 +++++++++++++---
+ .../combining/observer/ZaehlendeEntenFabrik.java   | 24 +++++++++++---
+ .../combining/observer/test/EntenfabrikTest.java   | 18 ++++++----
+ .../combining/observer/test/GansAdapterTest.java   | 38 ++++++++++++++++++++++
+ .../combining/observer/test/GansTest.java          | 19 +++++++++++
+ 19 files changed, 320 insertions(+), 45 deletions(-)
+
+commit f2cef375bff1da3a0d54bb3e35a612f35e3f95e0
+Author: spolydor-tgm <spolydor@student.tgm.ac.at>
+Date:   Wed Dec 17 08:50:17 2014 +0100
+
+    added jar
+
+ "S06-Musterg\303\274ltige_Zusammenarbeit.jar" | Bin 0 -> 1648372 bytes
+ src/META-INF/MANIFEST.MF                      |   3 +++
+ 2 files changed, 3 insertions(+)
+
+commit 4eaf6a7265bb8f19ce2259230495a646ff4deb21
+Author: spolydor-tgm <spolydor@student.tgm.ac.at>
+Date:   Wed Dec 17 08:41:31 2014 +0100
+
+    added testcases
+
+ .../combining/observer/test/EntenfabrikTest.java      | 19 ++++++++++++-------
+ 1 file changed, 12 insertions(+), 7 deletions(-)
+
+commit a45dd9edffa1a51c3735ad8323571eafd9331f67
+Author: tgm-patrick-koc <cash1v@hotmail.com>
+Date:   Wed Dec 17 08:39:19 2014 +0100
+
+    testcases added
+
+ .../observer/QuakBeobachtungsSubjekt.java          |  2 ++
+ .../combining/observer/test/LockPfeifeTest.java    | 32 +++++++++++++++++++
+ .../combining/observer/test/QuakZaehlerTest.java   | 37 ++++++++++++++++++++++
+ .../combining/observer/test/QuakologeTest.java     | 22 +++++++++++++
+ .../combining/observer/test/ScharTest.java         | 37 ++++++++++++++++++++++
+ .../combining/observer/test/SenderRingTest.java    | 27 ++++++++++++++++
+ 6 files changed, 157 insertions(+)
+
+commit 28679ac460f09bfdd01f5829b0cf494b809624df
+Author: spolydor-tgm <spolydor@student.tgm.ac.at>
+Date:   Wed Dec 17 08:25:51 2014 +0100
+
+    added package test
+
+ src/headfirst/combining/observer/test/EntenfabrikTest.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d3587304dde5507adff9d7434c462ef0a0c6aeca
+Author: spolydor-tgm <spolydor@student.tgm.ac.at>
+Date:   Wed Dec 17 08:24:58 2014 +0100
+
+    added package test
+
+ .../combining/observer/test/EntenfabrikTest.java   | 32 ++++++++++++++++++++++
+ 1 file changed, 32 insertions(+)
+
+commit e05bf75007e570b730152f276251583c431fc980
+Author: spolydor-tgm <spolydor@student.tgm.ac.at>
+Date:   Wed Dec 17 08:17:37 2014 +0100
+
+    updated documentation file
+
+ S06_Protokoll_Polydor_Kocsis.docx  | Bin 1163983 -> 1163866 bytes
+ S06_Protokoll_Polydor_Kocsis.pages | Bin 1224562 -> 1225167 bytes
+ S06_Protokoll_Polydor_Kocsis.pdf   | Bin 1301376 -> 1304105 bytes
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit f67fb5b8549a93297266550fea172b072be011aa
+Author: spolydor-tgm <spolydor@student.tgm.ac.at>
+Date:   Tue Dec 16 14:24:25 2014 +0100
+
+    added documentation file
+
+ S06_Protokoll_Polydor_Kocsis.docx  | Bin 25985 -> 1163983 bytes
+ S06_Protokoll_Polydor_Kocsis.pages | Bin 0 -> 1224562 bytes
+ S06_Protokoll_Polydor_Kocsis.pdf   | Bin 0 -> 1301376 bytes
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 7bde43019a5b7bd87ecdaf7dae6709148c155069
+Author: spolydor-tgm <spolydor@student.tgm.ac.at>
+Date:   Fri Dec 12 12:48:58 2014 +0100
+
+    change branch
+
+ S06_Protokoll_Polydor_Kocsis.docx                  | Bin 0 -> 25985 bytes
+ UML.tiff                                           | Bin 0 -> 1337458 bytes
+ .../combining/observer/AbstrakteEntenFabrik.java   |   9 ++++
+ src/headfirst/combining/observer/Beobachter.java   |   5 ++
+ .../combining/observer/EntenSimulator.java         |  54 +++++++++++++++++++++
+ src/headfirst/combining/observer/Entenfabrik.java  |  20 ++++++++
+ src/headfirst/combining/observer/Gans.java         |  12 +++++
+ src/headfirst/combining/observer/GansAdapter.java  |  28 +++++++++++
+ src/headfirst/combining/observer/GummiEnte.java    |  26 ++++++++++
+ src/headfirst/combining/observer/LockPfeife.java   |  26 ++++++++++
+ src/headfirst/combining/observer/MoorEnte.java     |  26 ++++++++++
+ .../observer/QuakBeobachtungsSubjekt.java          |   6 +++
+ src/headfirst/combining/observer/QuakZaehler.java  |  31 ++++++++++++
+ src/headfirst/combining/observer/Quakfaehig.java   |   5 ++
+ src/headfirst/combining/observer/Quakologe.java    |  12 +++++
+ src/headfirst/combining/observer/Schar.java        |  34 +++++++++++++
+ src/headfirst/combining/observer/SenderRing.java   |  29 +++++++++++
+ src/headfirst/combining/observer/StockEnte.java    |  26 ++++++++++
+ .../combining/observer/ZaehlendeEntenFabrik.java   |  20 ++++++++
+ 19 files changed, 369 insertions(+)
+
+commit 3fcc0e42137405da41893799e5a2caeeb8f63be9
+Author: spolydor-tgm <spolydor-tgm@users.noreply.github.com>
+Date:   Wed Oct 15 17:13:59 2014 +0200
+
+    Initial commit
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
