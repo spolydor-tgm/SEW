@@ -2,6 +2,7 @@ package headfirst.combining.observer.test;
 
 import headfirst.combining.observer.Gans;
 import headfirst.combining.observer.GansAdapter;
+import headfirst.combining.observer.Quakologe;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -31,12 +32,16 @@ public class GansAdapterTest {
 
 	@Test
 	public void testRegistriereBeobachter() throws Exception {
-		gansAdapter.registriereBeobachter(new );
+		gansAdapter.registriereBeobachter(new Quakologe());
+		gansAdapter.benachrichtigeBeobachtende();
+		assertEquals("Quakologe: sich als Ente ausgebende Gans hat gerade gequakt.", outContent.toString().trim());
 	}
 
 	@Test
 	public void testBenachrichtigeBeobachtende() throws Exception {
-
+		gansAdapter.registriereBeobachter(new Quakologe());
+		gansAdapter.benachrichtigeBeobachtende();
+		assertEquals("Quakologe: sich als Ente ausgebende Gans hat gerade gequakt.", outContent.toString().trim());
 	}
 
 	@Test
