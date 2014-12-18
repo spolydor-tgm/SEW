@@ -64,8 +64,8 @@ public class EntenSimulator {
 	}
 
 	/**
-	 *
-	 * @param ente
+	 * Laesst Ente quaken
+	 * @param ente die quaken soll
 	 */
 	void simulieren(Quakfaehig ente) {
 		ente.quaken();

@@ -4,7 +4,7 @@ public interface QuakBeobachtungsSubjekt {
 
 	/**
 	 * Stellt die Methode "registriereBeobachter(Beobachter beobachter)" allen Klassen bereit, welche QuakBeobachtungsSubjekt implementieren
-	 * @param beobachter
+	 * @param beobachter der zum Beobachten registriert wird
 	 */
 	public void registriereBeobachter(Beobachter beobachter);
 
