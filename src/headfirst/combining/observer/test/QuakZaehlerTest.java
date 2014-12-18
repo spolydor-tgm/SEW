@@ -17,6 +17,7 @@ public class QuakZaehlerTest {
 	private Quakfaehig ente;
 	private QuakZaehler quakZaehler;
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+
 	@Before
 	public void setUp() throws Exception {
 		ente = new GummiEnte();
