@@ -17,6 +17,7 @@ public class EntenfabrikTest {
 	@Before
 	public void setUp() throws Exception {
 		entenfabrik = new Entenfabrik();
+
 	}
 
 	@Test
