@@ -1,12 +1,16 @@
 package headfirst.combining.observer.test;
 
-import headfirst.combining.observer.*;
+import headfirst.combining.observer.Entenfabrik;
 import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class EntenfabrikTest extends Entenfabrik {
+/**
+ * @author Stefan Polydor
+ * @version 17.12.14
+ */
+public class EntenfabrikTest {
 
 	private Entenfabrik entenfabrik;
 
@@ -17,21 +21,21 @@ public class EntenfabrikTest extends Entenfabrik {
 
 	@Test
 	public void testErzeugeStockEnte() throws Exception {
-		assertEquals(new StockEnte().toString(), entenfabrik.erzeugeStockEnte().toString());
+		assertEquals("Stockente", entenfabrik.erzeugeStockEnte().toString());
 	}
 
 	@Test
 	public void testErzeugeMoorEnte() throws Exception {
-		assertEquals(new MoorEnte().toString(), entenfabrik.erzeugeMoorEnte().toString());
+		assertEquals("Moorente", entenfabrik.erzeugeMoorEnte().toString());
 	}
 
 	@Test
 	public void testErzeugeLockPfeife() throws Exception {
-		assertEquals(new LockPfeife().toString(), entenfabrik.erzeugeLockPfeife().toString());
+		assertEquals("Lockpfeife", entenfabrik.erzeugeLockPfeife().toString());
 	}
 
 	@Test
 	public void testErzeugeGummiEnte() throws Exception {
-		assertEquals(new GummiEnte().toString(), entenfabrik.erzeugeGummiEnte().toString());
+		assertEquals("Gummiente", entenfabrik.erzeugeGummiEnte().toString());
 	}
 }
