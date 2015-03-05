@@ -1,0 +1,12 @@
+Selenium IDE (http://www.seleniumhq.org/download/) Firefox Plugin installieren:
+
+.xpi Datei runterladen
+in Firefox auf Extras->Addons und dann auf das Zahnrad drücken und dann auf Addon aus Datei installieren drücken
+nun die .xpi Datei auswählen und das Addon installieren.
+
+TestCases erstellen:
+Nun kann man in Firefox die Selenium IDE öffnen.
+Dort kann man nun über Datei->New Test Case neue TestCases erstellen
+Über Action->Record können nun die TestCases mit Actions gefüllt werden in dem man mit der Maus klickt und die gewünschten Values auf Webseiten eingibt.
+Nach dem man mit dem erstellen der Actions fertig ist kann man wieder mit Action->Record das Recording beenden.
+Mithilfe des linken grünen Pfeils kann der TestCase abgespielt werden.
