@@ -19,8 +19,6 @@ import javax.swing.JCheckBox;
 
 import org.bouncycastle.crypto.tls.AlwaysValidVerifyer;
 
-import other.Tooltip;
-
 /**
  * @author Tony
  * @version 1.0

@@ -1,4 +1,4 @@
-package other;
+package general;
 
 public class Tooltip {
 	//allgemein

@@ -1,4 +1,4 @@
-package other;
+package general;
 
 public class TestMain {
 	public static int[] generateNumbers(int amount){
