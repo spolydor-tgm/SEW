@@ -173,7 +173,7 @@ public class KenoWindowGUI extends JFrame implements ActionListener {
 						//@debug
 						//System.out.println(browser);
 						
-						keno.BotFunctions.startBot(browser, KenoWindowGUI.name, KenoWindowGUI.pw, tokens, KenoWindowGUI.bet, amount, everyTurn);
+						keno.KenoBotFunctions.startBot(browser, KenoWindowGUI.name, KenoWindowGUI.pw, tokens, KenoWindowGUI.bet, amount, everyTurn);
 					}
 				};
 				t.start();

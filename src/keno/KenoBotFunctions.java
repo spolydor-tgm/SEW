@@ -21,25 +21,26 @@ import com.gargoylesoftware.htmlunit.ElementNotFoundException;
  * @author Tony
  * @version 1.0
  */
-public class BotFunctions {
+public class KenoBotFunctions {
 
 	static int amount;
 	static int token_left = 0;
 	static int token_used = 0;
 	static boolean everyTurn;
 	static WebDriver driver = null;
-	static KenoOverwatchGUI end;
+	static OverwatchGUI end;
 
 	public static void startBot(String browser, String name, String pw,int tokens, String bet, String amount, boolean generateEveryTurn) {
-		BotFunctions.amount = Integer.parseInt(amount);
-		BotFunctions.everyTurn = generateEveryTurn;
+		KenoBotFunctions.amount = Integer.parseInt(amount);
+		KenoBotFunctions.everyTurn = generateEveryTurn;
 		token_left = tokens;
 		token_used = 0;
 
 		Thread t = new Thread() {
 			@Override
 			public void run() {
-				end = new KenoOverwatchGUI();
+				end = new OverwatchGUI();
+				end.repaint();
 			}
 		};
 		t.start();

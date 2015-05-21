@@ -183,7 +183,7 @@ public class HLWindowGUI extends JFrame implements ActionListener {
 					Thread t = new Thread() {
 						@Override
 						public void run() {
-							BotFunctions.startBot(browser, HLWindowGUI.name,HLWindowGUI.pw, tokens,HLWindowGUI.bet,HLWindowGUI.rounds);
+							HighLowBotFunctions.startBot(browser, HLWindowGUI.name,HLWindowGUI.pw, tokens,HLWindowGUI.bet,HLWindowGUI.rounds);
 						}
 					};
 					t.start();

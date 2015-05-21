@@ -1,4 +1,6 @@
-package keno;
+package general;
+
+import high_low.HighLowBotFunctions;
 
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
@@ -13,11 +15,15 @@ import javax.swing.JLabel;
 import javax.swing.JButton;
 import javax.swing.JProgressBar;
 
+import slots.SlotsBotFunctions;
+import keno.KenoBotFunctions;
+import keno.KenoWindowGUI;
+
 /**
  * @author Tony
  * @version 1.0
  */
-public class KenoOverwatchGUI extends JFrame implements ActionListener {
+public class OverwatchGUI extends JFrame implements ActionListener {
 
 	static JLabel lblTokensLeft;
 	static JLabel lblTokensUsed;
@@ -47,7 +53,7 @@ public class KenoOverwatchGUI extends JFrame implements ActionListener {
 	/**
 	 * Create the frame.
 	 */
-	public KenoOverwatchGUI() {
+	public OverwatchGUI() {
 		
 		if(KenoWindowGUI.getOnTop()==true) {
 			setAlwaysOnTop(true);
@@ -70,7 +76,7 @@ public class KenoOverwatchGUI extends JFrame implements ActionListener {
 		txtrTheBotWill.setBounds(10, 11, 284, 64);
 		contentPane.add(txtrTheBotWill);
 
-		lblTokensLeft = new JLabel("Tokens left: " + BotFunctions.getToken_left());
+		lblTokensLeft = new JLabel("Tokens left: " + KenoBotFunctions.getToken_left());
 		lblTokensLeft.setBounds(155, 86, 98, 14);
 		contentPane.add(lblTokensLeft);
 
@@ -86,9 +92,30 @@ public class KenoOverwatchGUI extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		String game = SelectGameGUI.getGame();
 		this.dispose();
-		JOptionPane.showMessageDialog(null, "Successfully stopped the Bot.\nTokens used: " +BotFunctions.getToken_used() +"\nTokens left: " +BotFunctions.getToken_left());
-		BotFunctions.killDriver();
+		
+		switch (game) {
+		case "Slots":
+			SlotsBotFunctions.killDriver();
+			JOptionPane.showMessageDialog(null, "Successfully stopped the Bot.\nTokens used: " +SlotsBotFunctions.getToken_used() +"\nTokens left: " +SlotsBotFunctions.getToken_left());
+			break;
+		case "Keno":
+			KenoBotFunctions.killDriver();
+			JOptionPane.showMessageDialog(null, "Successfully stopped the Bot.\nTokens used: " +KenoBotFunctions.getToken_used() +"\nTokens left: " +KenoBotFunctions.getToken_left());
+			break;
+		case "High/Low":
+			HighLowBotFunctions.killDriver();
+			JOptionPane.showMessageDialog(null, "Successfully stopped the Bot.\nTokens used: " +HighLowBotFunctions.getToken_used() +"\nTokens left: " +HighLowBotFunctions.getToken_left());
+			break;
+		default:
+			SlotsBotFunctions.killDriver();
+			KenoBotFunctions.killDriver();
+			HighLowBotFunctions.killDriver();
+			JOptionPane.showMessageDialog(null, "Successfully stopped the Bot.");
+			break;
+		}
+		
 		System.exit(NORMAL);
 	}
 

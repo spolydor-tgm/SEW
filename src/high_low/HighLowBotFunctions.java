@@ -20,12 +20,12 @@ import com.gargoylesoftware.htmlunit.ElementNotFoundException;
  * @author Tony
  * @version 1.0
  */
-public class BotFunctions {
+public class HighLowBotFunctions {
 
 	static int token_left = 0;
 	static int token_used = 0;
 	static WebDriver driver = null;
-	static HLOverwatchGUI end;
+	static OverwatchGUI end;
 
 	public static void startBot(String browser, String name, String pw, int tokens, String bet, int rounds) {
 		token_left = tokens;
@@ -34,7 +34,8 @@ public class BotFunctions {
 		Thread t = new Thread() {
 			@Override
 			public void run() {
-				end = new HLOverwatchGUI();
+				end = new OverwatchGUI();
+				end.repaint();
 			}
 		};
 		t.start();

@@ -149,7 +149,7 @@ public class SlotsWindowGUI extends JFrame implements ActionListener {
 					Thread t = new Thread() {
 						@Override
 						public void run() {
-							BotFunctions.startBot(browser, SlotsWindowGUI.name,SlotsWindowGUI.pw, tokens,SlotsWindowGUI.bet);
+							SlotsBotFunctions.startBot(browser, SlotsWindowGUI.name,SlotsWindowGUI.pw, tokens, SlotsWindowGUI.bet);
 						}
 					};
 					t.start();

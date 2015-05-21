@@ -20,12 +20,12 @@ import com.gargoylesoftware.htmlunit.ElementNotFoundException;
  * @author Tony
  * @version 1.0
  */
-public class BotFunctions {
+public class SlotsBotFunctions {
 
 	static int token_left = 0;
 	static int token_used = 0;
 	static WebDriver driver = null;
-	static SlotsOverwatchGUI end;
+	static OverwatchGUI end;
 
 	public static void startBot(String browser, String name, String pw,
 			int tokens, String bet) {
@@ -35,7 +35,8 @@ public class BotFunctions {
 		Thread t = new Thread() {
 			@Override
 			public void run() {
-				end = new SlotsOverwatchGUI();
+				end = new OverwatchGUI();
+				end.repaint();
 			}
 		};
 		t.start();
@@ -110,8 +111,7 @@ public class BotFunctions {
 					break;
 				case "1K":
 					for (int i = 0; i < tokens; i++) {
-						driver.findElement(By.cssSelector("li.betbtn.btn-1k"))
-								.click();
+						driver.findElement(By.cssSelector("li.betbtn.btn-1k")).click();
 						token_left--;
 						token_used++;
 						end.updateCount(token_used, token_left);
@@ -120,8 +120,7 @@ public class BotFunctions {
 					break;
 				case "10K":
 					for (int i = 0; i < tokens; i++) {
-						driver.findElement(By.cssSelector("li.betbtn.btn-10k"))
-								.click();
+						driver.findElement(By.cssSelector("li.betbtn.btn-10k")).click();
 						token_left--;
 						token_used++;
 						end.updateCount(token_used, token_left);
@@ -130,8 +129,7 @@ public class BotFunctions {
 					break;
 				case "100K":
 					for (int i = 0; i < tokens; i++) {
-						driver.findElement(By.cssSelector("li.betbtn.btn-100k"))
-								.click();
+						driver.findElement(By.cssSelector("li.betbtn.btn-100k")).click();
 						token_left--;
 						token_used++;
 						end.updateCount(token_used, token_left);
@@ -140,8 +138,7 @@ public class BotFunctions {
 					break;
 				case "1M":
 					for (int i = 0; i < tokens; i++) {
-						driver.findElement(By.cssSelector("li.betbtn.btn-1m"))
-								.click();
+						driver.findElement(By.cssSelector("li.betbtn.btn-1m")).click();
 						token_left--;
 						token_used++;
 						end.updateCount(token_used, token_left);
@@ -150,8 +147,7 @@ public class BotFunctions {
 					break;
 				case "10M":
 					for (int i = 0; i < tokens; i++) {
-						driver.findElement(By.cssSelector("li.betbtn.btn-10m"))
-								.click();
+						driver.findElement(By.cssSelector("li.betbtn.btn-10m")).click();
 						token_left--;
 						token_used++;
 						end.updateCount(token_used, token_left);
@@ -160,8 +156,7 @@ public class BotFunctions {
 					break;
 				default:
 					for (int i = 0; i < tokens; i++) {
-						driver.findElement(By.cssSelector("li.betbtn.btn-10"))
-								.click();
+						driver.findElement(By.cssSelector("li.betbtn.btn-10")).click();
 						token_left--;
 						token_used++;
 						end.updateCount(token_used, token_left);
@@ -174,8 +169,7 @@ public class BotFunctions {
 				JOptionPane.showMessageDialog(null,"Couldn't find the bet button\nGot enough money?");
 			}
 			JOptionPane.showMessageDialog(null,"The Bot finished now\nBot tired...\nBot going to sleep ... zZz");
-			driver.quit();
-			end.endProg();
+			killDriver();
 		} catch (InterruptedException e) {
 			System.out
 					.println("Fatal Error occured, please show this log to 84N3:");
