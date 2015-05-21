@@ -97,9 +97,9 @@ public class HighLowBotFunctions {
 			
 			Thread.sleep(12000);
 
-			debugSelect();
+			//debugSelect();
 			
-			//setBet(bet);
+			setBet(bet);
 //			
 //			for (int i = 0; i <= tokens; i++) {
 //				// gamble

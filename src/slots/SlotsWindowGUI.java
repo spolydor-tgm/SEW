@@ -71,7 +71,7 @@ public class SlotsWindowGUI extends JFrame implements ActionListener {
 		contentPane.add(lblPassword);
 		
 		JLabel lblTokensLeft = new JLabel("Tokens left:");
-		lblTokensLeft.setToolTipText(Tooltip.tokens);
+		lblTokensLeft.setToolTipText(StringOutsource.tokens);
 		lblTokensLeft.setBounds(20, 136, 90, 14);
 		contentPane.add(lblTokensLeft);
 		
@@ -91,7 +91,7 @@ public class SlotsWindowGUI extends JFrame implements ActionListener {
 		
 		textArea_1 = new JTextArea("*Please note that this won't be able to "
 				+ "\nsolve the captcha (afterall that what it \nis there for) and that you should have solved"
-				+ "\nit by hand in the last few minutes.");
+				+ "\nit by hand in the last half hour or so.");
 		textArea_1.setEditable(false);
 		textArea_1.setBackground(getBackground());
 		textArea_1.setBounds(10, 265, 364, 85);
@@ -113,7 +113,7 @@ public class SlotsWindowGUI extends JFrame implements ActionListener {
 		contentPane.add(comboBox);
 		
 		KeepWatchdogOnTop = new JCheckBox("Keep Watchdog always on top");
-		KeepWatchdogOnTop.setToolTipText(Tooltip.keepWdOnTop);
+		KeepWatchdogOnTop.setToolTipText(StringOutsource.keepWdOnTop);
 		KeepWatchdogOnTop.setBounds(20, 195, 223, 23);
 		contentPane.add(KeepWatchdogOnTop);
 	}

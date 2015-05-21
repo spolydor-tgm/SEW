@@ -75,7 +75,7 @@ public class HLWindowGUI extends JFrame implements ActionListener {
 		contentPane.add(lblPassword);
 		
 		JLabel lblTokensLeft = new JLabel("Tokens left:");
-		lblTokensLeft.setToolTipText(Tooltip.tokens);
+		lblTokensLeft.setToolTipText(StringOutsource.tokens);
 		lblTokensLeft.setBounds(20, 136, 90, 14);
 		contentPane.add(lblTokensLeft);
 		
@@ -95,7 +95,7 @@ public class HLWindowGUI extends JFrame implements ActionListener {
 		
 		textArea_1 = new JTextArea("*Please note that this won't be able to "
 				+ "\nsolve the captcha (afterall that what it \nis there for) and that you should have solved"
-				+ "\nit by hand in the last few minutes.");
+				+ "\nit by hand in the last half an hour or so.");
 		textArea_1.setEditable(false);
 		textArea_1.setBackground(getBackground());
 		textArea_1.setBounds(10, 292, 364, 85);
@@ -117,24 +117,28 @@ public class HLWindowGUI extends JFrame implements ActionListener {
 		contentPane.add(comboBox);
 		
 		KeepWatchdogOnTop = new JCheckBox("Keep Watchdog always on top");
-		KeepWatchdogOnTop.setToolTipText(Tooltip.keepWdOnTop);
+		KeepWatchdogOnTop.setToolTipText(StringOutsource.keepWdOnTop);
 		KeepWatchdogOnTop.setBounds(14, 230, 223, 23);
 		contentPane.add(KeepWatchdogOnTop);
 		
 		JLabel lblCashInAfter = new JLabel("Cash- In after every ");
+		lblCashInAfter.setToolTipText(StringOutsource.cashIn);
 		lblCashInAfter.setBounds(20, 186, 117, 14);
 		contentPane.add(lblCashInAfter);
 		
 		fieldRounds = new JTextField();
 		fieldRounds.setBounds(140, 183, 35, 20);
+		fieldRounds.setToolTipText(StringOutsource.cashIn);
 		contentPane.add(fieldRounds);
 		fieldRounds.setColumns(10);
 		
 		JLabel lblRounds = new JLabel("rounds");
 		lblRounds.setBounds(186, 186, 46, 14);
+		lblRounds.setToolTipText(StringOutsource.cashIn);
 		contentPane.add(lblRounds);
 		
 		JCheckBox chckbxLetTheBot = new JCheckBox("Let the Bot take high risks");
+		chckbxLetTheBot.setToolTipText(StringOutsource.highRisk);
 		chckbxLetTheBot.setBounds(14, 207, 329, 23);
 		contentPane.add(chckbxLetTheBot);
 	}

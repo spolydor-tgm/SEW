@@ -75,7 +75,7 @@ public class KenoWindowGUI extends JFrame implements ActionListener {
 		contentPane.add(lblPassword);
 		
 		JLabel lblTokensLeft = new JLabel("Tokens left:");
-		lblTokensLeft.setToolTipText(Tooltip.tokens);
+		lblTokensLeft.setToolTipText(StringOutsource.tokens);
 		lblTokensLeft.setBounds(20, 135, 90, 14);
 		contentPane.add(lblTokensLeft);
 		
@@ -118,17 +118,17 @@ public class KenoWindowGUI extends JFrame implements ActionListener {
 		
 		KeepWatchdogOnTop = new JCheckBox("Keep Watchdog always on top");
 		KeepWatchdogOnTop.setBounds(10, 266, 223, 23);
-		KeepWatchdogOnTop.setToolTipText(Tooltip.keepWdOnTop);
+		KeepWatchdogOnTop.setToolTipText(StringOutsource.keepWdOnTop);
 		contentPane.add(KeepWatchdogOnTop);
 		
 		GenerateRandomNumbers = new JCheckBox("Generate random numbers every turn");
 		GenerateRandomNumbers.setBounds(10, 236, 327, 23);
-		GenerateRandomNumbers.setToolTipText(Tooltip.newNbsEveryTurn);
+		GenerateRandomNumbers.setToolTipText(StringOutsource.newNbsEveryTurn);
 		contentPane.add(GenerateRandomNumbers);
 		
 		JLabel lblAmountOfNumbers = new JLabel("Amount of numbers");
 		lblAmountOfNumbers.setBounds(20, 185, 120, 14);
-		lblAmountOfNumbers.setToolTipText(Tooltip.kenoAmountOfNbs);
+		lblAmountOfNumbers.setToolTipText(StringOutsource.kenoAmountOfNbs);
 		contentPane.add(lblAmountOfNumbers);
 		
 		String[] amounts = {"10", "9", "8", "7", "6", "5", "4", "3", "2", "1"};
